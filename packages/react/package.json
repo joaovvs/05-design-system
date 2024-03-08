@@ -13,9 +13,9 @@
   "author": "joaovvs",
   "license": "MIT",
   "devDependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@joaovvs-ignite-ui/eslint-config": "*",
+    "@joaovvs-ignite-ui/tokens": "*",
+    "@joaovvs-ignite-ui/ts-config": "*",
     "@types/react": "^18.2.61",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
