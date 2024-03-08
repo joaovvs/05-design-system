@@ -22,9 +22,19 @@ const config: StorybookConfig = {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
+  "features": {
+    "storyStoreV7": true
+  },
   docs: {
     autodocs: "tag",
     defaultName: 'Documentation',
+  },
+  viteFinal: (config, {configType}) => {
+    if(configType === 'PRODUCTION'){
+      config.base = '/05-design-system/'
+    }
+
+    return config
   },
 };
 export default config;
