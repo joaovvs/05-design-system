@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/joaovvs.png',
     alt: 'João Santana',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
