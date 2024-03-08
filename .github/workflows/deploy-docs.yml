@@ -9,19 +9,19 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      -name: Checkout
+    - name: Checkout
       uses: actions/checkout@v4
 
-      -name: Setup Node.js
+    - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20
 
-      -run: npm ci
+    - run: npm ci
 
-      - run: npm run build
+    - run: npm run build
 
-      -name: Deploy storybook
+    - name: Deploy storybook
       working-directory: ./packages/docs
       run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
       env: 
