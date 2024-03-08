@@ -1,6 +1,6 @@
 {
-  "name": "@ignite-ui/react",
-  "version": "1.0.0",
+  "name": "@joaovvs-ignite-ui/react",
+  "version": "2.0.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,7 +10,7 @@
     "dev": "tsup src/index.ts* --format esm, cjs --dts --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
-  "author": "",
+  "author": "joaovvs",
   "license": "MIT",
   "devDependencies": {
     "@ignite-ui/eslint-config": "*",
